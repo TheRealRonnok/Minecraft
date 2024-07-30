@@ -29,6 +29,35 @@ a {
     color: white;
 }
 
+/* LISTS */
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* BLOCKS */
+/* TODO: Add desired margins/etc for block-elements */
+/* .block {
+
+} */
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* GRIDS */
+/* Difficult concept, I know XD */
+.grid {
+    display: grid;
+}
+
+/* NOTE: 'grid-template-columns specifies the number (and widths) of columns in a grid layout */
+/* The values are a space-separated list, where each value specifies the size of the respective column */
+.grid--1x2 {
+    grid-template-columns: 1fr 1fr;
+}
+
 /* NAVIGATION BAR */
 .nav {
     display: flex;
@@ -60,9 +89,18 @@ a {
     transition: color 0.2s;
 }
 
-/* LISTS */
-.list {
-    list-style: none;
-    padding-left: 0;
+/* HERO COMPONENT */
+.hero {
+    margin-top: 6rem;
 }
 
+.hero__image {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.hero__content {
+    margin: auto 0;
+    margin-left: 2rem;
+}
