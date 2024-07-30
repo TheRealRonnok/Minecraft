@@ -1,7 +1,7 @@
 /* VARIABLES */
 :root {
     /* COLORS */
-    --color-body: black;
+    --color-body: white;
 }
 
 /* TYPOGRAPHY */
@@ -15,6 +15,8 @@ body {
     font-size: 2.4rem;
     line-height: 1.5;
     color: var(--color-body);
+    background: url(../images/Background.png);
+    background-size: cover;
 }
 
 h1 {
@@ -24,6 +26,7 @@ h1 {
 /* LINKS */
 a {
     text-decoration: none;
+    color: white;
 }
 
 /* NAVIGATION BAR */
@@ -33,6 +36,7 @@ a {
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
+    background: #171717;
 }
 
 .nav__list {
@@ -43,10 +47,17 @@ a {
 
 .nav__item {
     padding-right: 2rem;
+    text-transform: uppercase;
 }
 
 .nav__title {
     padding-left: 2rem;
+}
+
+/* Adding a Hover effect to the Anchors in the nav */
+.nav__item > a:hover {
+    color: #b0b0b0;
+    transition: color 0.2s;
 }
 
 /* LISTS */
