@@ -23,6 +23,10 @@ h1 {
     font-size: 3rem;
 }
 
+p {
+    margin: 0;
+}
+
 /* LINKS */
 a {
     text-decoration: none;
@@ -56,6 +60,10 @@ a {
 /* The values are a space-separated list, where each value specifies the size of the respective column */
 .grid--1x2 {
     grid-template-columns: 1fr 1fr;
+}
+
+.grid--1x2--right {
+    grid-template-columns: 1fr 2fr;
 }
 
 /* NAVIGATION BAR */
@@ -101,6 +109,22 @@ a {
 }
 
 .hero__content {
-    margin: auto 0;
-    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.hero__heading {
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.hero__tagline {
+    font-size: 4rem;
+    color: #4a104f;
+    text-shadow: 1px 1px 2px white, -1px 1px 2px white, 1px -1px 2px white, -1px -1px 2px white;
+    font-style: italic;
 }
