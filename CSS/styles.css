@@ -24,7 +24,7 @@ h1 {
 }
 
 h1, h2, h3 {
-    margin: 0;
+    margin-bottom: 1rem;
 }
 
 p {
@@ -45,9 +45,9 @@ a {
 
 /* BLOCKS */
 /* TODO: Add desired margins/etc for block-elements */
-/* .block {
-
-} */
+.block {
+    margin-top: 5rem;
+}
 
 .container {
     max-width: 1140px;
@@ -135,7 +135,7 @@ a {
 
 /* MAP */
 .map {
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 
 .map__image {
@@ -155,3 +155,38 @@ a {
 .map__header {
     margin-bottom: 2rem;
 }
+
+/* FEATURES */
+.feature {
+    gap: 5rem 5rem; /* Rows | Columns */
+    margin: 10rem;
+}
+
+.features--header {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+.feature__image {
+    width: 100%;
+}
+
+.feature--content {
+    display: flex;
+    justify-content: center;
+}
+
+.feature:first-of-type {
+    margin-top: 3rem;
+}
+
+.feature__heading {
+    margin: 0 auto;
+}
+
+/* PROJECTS */
+
+
+/* MEET THE TEAM */
+
