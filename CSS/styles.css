@@ -234,11 +234,24 @@ a {
 /* FOOTER */
 .footer {
     position: sticky;
-    bottom: 0;
+    bottom: -1px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
     background: #171717;
+}
+
+.footer > a.top {
+    color: #4a104f;
+}
+
+.footer > a:hover {
+    color: #b0b0b0;
+    transition: color 0.2s;
+}
+
+.footer__item {
+    margin-left: 2rem;
 }
